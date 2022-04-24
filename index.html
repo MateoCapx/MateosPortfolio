@@ -17,20 +17,22 @@
             <h2> <a href= "Home">Home </a> </h2>
          </li> 
        
-        <li>
-             <h2> <a href= "Portfolio"> Portfolio </a> </h2>
+         <li>  
+            <h2> <a href= "#ProSkills">Professional </a> </h2>
          </li>
        
-         <li>  
-            <h2> <a href= "Professional">Professional </a> </h2>
+         
+        <li>
+             <h2> <a href= "#Portfolio"> Portfolio </a> </h2>
          </li>
+       
        
          <li> 
-            <h2> <a href= "Experience ">Experience </a> </h2> 
+            <h2> <a href= "#Experience ">Experience </a> </h2> 
         </li>
        
         <li> 
-            <h2> <a href= "Contact">Contact </a> </h2>
+            <h2> <a href= "#Contact">Contact </a> </h2>
          </li> 
        
      </ul>  
@@ -64,7 +66,7 @@
 
 
 
-    <section class="Pro">   
+    <section id="ProSkills" class="Pro">   
         <div class="Pro-Skills">
 
 
@@ -74,7 +76,7 @@
        
            
         <ul>
-   <div class="Column1">
+            <section class="main-content">
             <li>
                 <h2> Programming Languagess</h2>
              </li>
@@ -160,11 +162,29 @@
     </section>
 
 
+    <main class="flex-container">
 
+        <section class="main-content blue">
+          <h2>Main Content</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat cumque exercitationem vitae nisi tenetur delectus praesentium doloremque, quibusdam nemo maxime laudantium et possimus pariatur doloribus excepturi. Veritatis ex numquam inventore odit dolorum mollitia dolorem, itaque atque non ratione molestias a repellat ullam corporis quisquam ipsa sit iure tempore nulla.
+          </p>
+        </section>
+    
+        <aside class="sidebar green">
+          <h2>Sidebar</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti temporibus recusandae nisi, ipsa esse tempore aperiam laborum libero ipsum at? Accusamus nostrum, atque amet, fugiat voluptate iusto maiores quam similique dolorum vel, voluptatum rerum dignissimos accusantium modi perferendis quidem in! Eum velit aut voluptate ea rerum. Mollitia possimus aut itaque!
+          </p>
+    
+        </aside>
+    
+      </main>
+    
 
 
 <!-- Strat of Portfolio Secion    -->
-    <section class="Portfolio">
+    <section id="Portfolio" class="Portfolio">
         <div class="Port-folio">
 
        
@@ -179,8 +199,8 @@
     </section>
 
 
-<!-- Strat of Experience Section    -->
-<section class="Experience">
+<!-- Strat of Experience Section   
+<section id="Experience" class="Experience">
     <div class="Experience-Section"> 
        
 
@@ -194,7 +214,7 @@
     </div>
 </section>
 
-
+ -->
 
 
 
@@ -223,18 +243,61 @@
 
 <!-- Strat of  Contact Me form   -->
 
-<form class="Contact">
-    <div class="Contact-me">
-
-<h1> Contact Me </h1>
 
 
 
+<section id="reach-out" class="contact"> 
+    <h2 class="section-title secondary-border"> Contact Me </h2>
+
+    <div class="contact-info">
+        
+        <section class="hero">
+            <div class="hero-form">
+                <h3> Contact Me </h3>
+                <p> If Your Looking to Learn More about my Coding Experience & How i can help Your Company Grow.</p>
+               
+        
+                <!-- Form Element -->
+                <form> 
+                    <label for="name"> Enter Full Name: </label> 
+                         <input type="text" placeholder="Your Name" name="name" id="name"  class="form-input"/>
+        
+                    <label for="email"> Enter Email Address: </label> 
+                         <input type="email" placeholder="Email Address" name="email" id="email"  class="form-input"/>
+        
+                    <label for="phone"> Enter A Phone Number: </label> 
+                         <input type="tel" placeholder="Phone Number" name="phone" id="phone"  class="form-input"/>
+        
+
+                    <button type="submit">
+                        Submit
+                        
+                 </button>         
+                </p>
+             </form>
+            </div>
+        
+
+        <div>
+            <h3> Mateo McPherson</h3>
+            <address>
+               
+                P: 321-482-7882 <br/>
+                E: <a href="mailto:mmcpherson52@gmail.com">mmcpherson52@gmail.com</a>
+            </div>
+            </address>
+        </div>
+    </section>
+
+ </form>  
+    
+</section>
 
 
 
-    </div>
-</form>
+
+
+
 
 
 
