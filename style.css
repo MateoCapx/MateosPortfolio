@@ -7,7 +7,7 @@ body{
 
 header{
 
-    background-color: grey;
+    background-color: black;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -18,6 +18,7 @@ header{
 
 header nav {
     margin: 0px 0;
+    background-color: black;
   }
   
   header nav ul li  a {
@@ -26,12 +27,12 @@ header nav {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    
+    color: white;
   }
   
   header nav ul li a:hover {
     background: var(--primary-color);
-    color: var(--secondary-color);
+    color: grey;
     border-radius: 15px;
     text-shadow: none;
   }
@@ -68,9 +69,10 @@ header nav {
 }
 
 .intro{
+    
     background-size: cover;
     background-position: center;
-    background-image: url("IMG_3145.jpeg") ;
+    background-image: url("2.jpg") ;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -88,13 +90,13 @@ header nav {
 .downloadResume button :hover{
     color: red;
     cursor:pointer;
-   background-color: black; 
+   background: wheat;
 }
 
 
 .downloadResume button{
     border-radius: 15px;
-    
+    background: wheat;
 }
 
 
@@ -114,6 +116,17 @@ header nav {
 
 /*  SKILLS COLUMN STARTS */
 
+.trainers ul li{
+    list-style: none; /* Removes bullet points */
+
+}
+
+.trainer  li{
+    list-style: none;
+   
+}
+
+
 .work {
     text-align: center;
     font-family: Papyrus ;
@@ -123,7 +136,7 @@ header nav {
     
     
     .trainer img {
-      width: 100%;
+      width: 60%;
     
     }
     
@@ -140,7 +153,7 @@ header nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-    
+     
     }
     
     
