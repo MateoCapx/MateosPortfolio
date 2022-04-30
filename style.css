@@ -1,13 +1,12 @@
 
 
 body{
-    background-color: rgb(251, 251, 255);
-    margin-left: 50px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    margin: 0%;
+    
 }
 
 header{
-
-    background-color: black;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -15,6 +14,9 @@ header{
 
 
 /* NAV STYLES START */
+
+
+
 
 header nav {
     margin: 0px 0;
@@ -31,8 +33,8 @@ header nav {
   }
   
   header nav ul li a:hover {
-    background: var(--primary-color);
-    color: grey;
+    background-color: grey;
+    color: white;
     border-radius: 15px;
     text-shadow: none;
   }
@@ -51,8 +53,9 @@ header nav {
 
 /* INTRODUCTION STYLES START */
 .intro{
-    padding: 100px;
+    padding: 0px;
     text-align: center;
+
 }
 
 .intro-section h1 {
@@ -61,25 +64,11 @@ header nav {
 }
 
 
-
-#about-me {
-    padding-top: 100px;
-   padding-right: 800px;
-
-}
-
-.intro{
-    
-    background-size: cover;
-    background-position: center;
-    background-image: url("2.jpg") ;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    
+  .intro-section img {
+    width: 40%;
+    padding-top: 50px;
+    border-radius: 250px;
   }
-  
 
 /* INTRODUCTION STYLES ENDS */
 
@@ -102,9 +91,8 @@ header nav {
 
 .downloadResume{
    text-align: center;
-   padding-top: 250px;
+   padding-top: 20px;
    
-
 }
 
 
@@ -131,7 +119,7 @@ header nav {
     text-align: center;
     font-family: Papyrus ;
     font-size: 65px;
-    padding-top: 200px;
+    padding-top: 100px;
     }
     
     
@@ -205,12 +193,7 @@ header nav {
     
   }
   
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
+ 
   /* Create four equal columns that floats next to each other */
   .column {
     float: left;
@@ -238,7 +221,6 @@ header nav {
 
 }
   .content {
-    background-color: white;
     padding: 10px;
     transition: 1s;        /* Allows in speed when hovering over image -  Creates hover image effects */
     cursor: pointer;
@@ -281,9 +263,6 @@ header nav {
 
 
 
-
-
-
 /* REACH OUT SECTION STYLES STARTS */
 
 .section-title {
@@ -293,10 +272,11 @@ header nav {
     text-align: center;
   }
   
+/*   
   .contact {
-    background: blue;
+   
   
-  }
+  } */
   
   .contact-info {
     display: flex;
@@ -337,14 +317,9 @@ header nav {
   
   
   
-  .contact-form button:hover {
-    color: var(--primary-color);
-    background: #39a6b2;
-  }
-  
   
   .contact-info a {
-    color: var(--primary-color);
+    color: white;
   }
   
 
@@ -420,132 +395,115 @@ font-size: 10px;
 
 /* Media Queries Starts  */
 
-@media screen and (max-width: 980px) {
-   header{
-      padding-bottom: 0;
-      justify-content: center;
-   }
-      header h1 {
-        width: 100%;
-        text-align: center;
-      }
 
-      header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-      }
-      header nav ul li a {
-        font-size: 20px;
-      }
-    
-      footer h2, footer div {
-        text-align: center;
-        width: 100%;
-      }
-    
-      .hero-cta, .hero-form {
-        width: 100%;
+  /* Tablets  */
+    @media screen and (min-width: 768px) {    /* If the Width of the screen is SMALLER than 980px  */
+       
+        .hero{
+           
+           text-align: center;
+        }
+
+        .hero div h3 {
+            margin-bottom: 0px;
+        }
+
+        .Portfolio .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+           
+        }
+
+            .trainers {
+                flex-wrap: nowrap;
+            }
+
+       
+        
+        .work {
+            margin-bottom: 5px;
+        }
+
+        #about-me h1 {
+            margin-bottom: 0px;
+        }
+
+        .intro-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        #about-me img {
+            width: 25%;
+            
+        }
+
+        .topnav{
+            width: 75%;
+           
+            
+            
+        }
+
+     }
+
+
+      /* moblie screens  */
+      @media screen and (max-width: 480px) {
+      
+        
+        footer h1{
+            font-size: 12px;
+            padding-right: 167px;
+        }
+
+
+
+      /* Styles for contact form start */
+
+        .contact-info .hero-form {
+         margin-left: 0px;
+         width: 50%;
+        
+            
+        }
+
+        #reach-out.contact div.contact-info .hero-form{
+             padding:20px;
+            
+         }
+
+        #reach-out.contact div.contact-info .hero div{
+        margin: -14px 0 5px 33px;
+          
+        }
+
+         .contact-info .hero .hero-form .form-input{
+           
+            padding: 13px 1px;
       }
       
-      .hero-cta {
-        text-align: center;
+      .section-title  {
+         font-size: 30px ;
+         padding: 0 231px 20px 100px;
       }
 
-      .section-title{
-        width:80%;
-      }
-      .trainer{
-        flex: 0 70%;
-      }
-      .contact-info iframe {
-        padding-top: 50px;
-        flex: 1 100%;
-
-      }
-     
-  }
-  
 
 
+        /* Styles for portfolio form start */
 
 
-/* this will be applied on any screen smaller than 980px */
+        .Port-folio .row .column .content img { 
+            width: 50%;
+            image-orientation: flip;
+          
+        }
 
-@media screen and (max-width: 768px) {    
- 
-  section {
-    padding: 30px 15px;
-  }
-  section {
-    padding: 30px 15px;
-  }
 
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
-
-  
-}
-  
-
-/* this will be applied on any screen between 768px and 575px */
-
-@media screen and (max-width:575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
-    width: 95%;
-  }
-
-  .intro p {
-    width: 100%;
-  }
-
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
+        .hero{
+           
+        }
     }
-    .contact-form {
-      order: 3;   /*  <<--- "order property" can be very useful it can rearrange how child elements appear on a page without moving the HTML. */
-    }
-/* this will be applied on any screen smaller than 575px */
-
-
-@media screen and  (max-width:575px){
-.steps h2 {
-  text-align: center;
-   
-    
-  }
-  
-
-}
